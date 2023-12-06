@@ -1,3 +1,6 @@
+@import url('./styles/LoadingComponent.css');
+@import url('./styles/LoginPage.css');
+
 .App {
   text-align: center;
 }

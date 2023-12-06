@@ -1,0 +1,217 @@
+:root {
+  --font-family: 'opensans', sans-serif;
+  --blue-color: #155FA3;
+  --btn-yellow: linear-gradient(75deg, #FFC107 44.85%, #FBCD00 94.37%);
+  --btn-hover: linear-gradient(180deg, #192048 0%, #2C397F 100%);
+}
+
+html {
+  font-family: var(--font-family);
+}
+
+h1, h2, h3, h4, h5, h6, div, canvas, span, input, table, li, ul, ol, *, textarea {
+  font-family: inherit;
+}
+
+h1 {
+  color: var(--blue-color);
+  word-spacing: 2px;
+}
+
+.logo {
+  justify-self: center;
+  margin: 10vh 0 2vh;
+  transform: scale(1.2);
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ellipse,
+.rectangle {
+  position: absolute;
+  z-index: 1;
+}
+
+.ellipse {
+  top: 3px;
+  transform: scale(1.2);
+  left: 0;
+}
+
+.rectangle {
+  top: 0;
+  right: 0;
+  transform: scale(1.4);
+}
+
+.white-container {
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  position: absolute;
+  bottom: 0;
+  top: 12.5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  background-color: white;
+  display: flex;
+  z-index: 2;
+}
+
+.group-pic {
+  flex: 1;
+  object-fit: cover;
+  border-top-right-radius: 40px;
+}
+
+.forgot-password {
+  color: red;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.input-style {
+  border-radius: 8vh;
+  border: 1px solid #D0D0D0;
+  color: #878787;
+  font-family: var(--font-family);
+  font-size: 20px;
+  padding: 10px;
+  padding-left: 30px;
+  height: 8vh;
+  width: 34vw;
+
+  &::placeholder {
+    font-size: 16px;
+    letter-spacing: 2px;
+    padding: 4px;
+    /* padding-left: 30px; */
+  }
+}
+
+.login-button-style {
+  border-radius: 40px;
+  border: 1px solid #FCC803;
+  background: var(--btn-yellow);
+  box-shadow: 0px 4px 4px 0px #FFC107;
+  color: black;
+  cursor: pointer;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  height: 7vh;
+  width: 15vw;
+  transition: all 0.3s ease;
+}
+
+.login-button-style:hover {
+  border: 1px solid #293576;
+  background: var(--btn-hover);
+  box-shadow: 0px 4px 4px 0px #26316E;
+  color: white;
+}
+
+.centered-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 25px;
+}
+
+.input-style,
+.login-button-style,
+.checkbox-container {
+  margin: 10px 0;
+}
+
+.forgot-password {
+  color: rgb(226, 90, 90);
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.group-pic-container {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.group-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-right-radius: 40px;
+}
+
+.password-strength-meter {
+  position: relative;
+}
+
+.password-strength-panel {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.strength-meter {
+  width: 100%;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 5px;
+  margin-top: 5px;
+  overflow: hidden;
+}
+
+.strength-fill {
+  height: 100%;
+  border-radius: 5px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transform: scale(1.5);
+  align-self: self-start;
+  margin-left: 130px;
+}
+
+.checkbox-container label {
+  font-size: 14px;
+}
+
+.custom-overlay {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+
+.overlay-title {
+  font-size: 34px;
+  font-weight: bold;
+}
+
+.overlay-subtitle {
+  font-size: 20px;
+}
